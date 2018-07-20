@@ -6,24 +6,74 @@
 </head>
 <body>
     <div id="site-content">
-      <div class="site-header">
-          <div class="container">
-            <a href="homepage.html" id="branding">
+       <div class="site-header">
+           <div class="container">
+                <a href="homepage.html" id="branding">
                 <img src="img/colorful-logo.png" alt="Logo principal" class="logo">
-                <div class="logo-text">
-                 <h1 class="site title">Brøderbund Software</h1>
-                 <small class="site-description">Tagline goes here</small>
-                </div>
-              </a> <!-- #branding -->
+               <div class="logo-text">
+                <h1 class="site title">Brøderbund Software</h1>
+                <small class="site-description">Tagline goes here</small>
+               </div>
+                 </a> <!-- #branding -->
 
-              <div class="right-section pull-right">
+               <div class="right-section pull-right">
                 <a href="cart.html" class="cart"><i class="icon-cart"></i> 0 items in cart</a>
                 <a href="#">My Account</a>
                 <a href="#">Logout <small>(Lorem Ipsum)</small></a>
-              </div> <!-- .right-section -->
+               </div> <!-- .right-section -->
 
-          </div> <!-- .container -->
-      </div> <!-- .site-header -->
+               <div class="main-navigation">
+                    <button class="toggle-menu"><i class="fa fa-bars"></i></button>
+                    <ul class="menu">
+                        <li class="menu-item home current-menu-item"><a href="index.html"><i class="icon-home"></i></a></li>
+                        <li class="menu-item"><a href="products.html">Accessories</a></li>
+                        <li class="menu-item"><a href="products.html">Promotions</a></li>
+                        <li class="menu-item"><a href="products.html">PC</a></li>
+                        <li class="menu-item"><a href="products.html">Playstation</a></li>
+                        <li class="menu-item"><a href="products.html">Xbox</a></li>
+                        <li class="menu-item"><a href="products.html">Wii</a></li>
+                    </ul> <!-- .menu --> 
+
+                    <div class="search-form">
+						<label><img src="img/icon-search.png"></label>
+						<input type="text" placeholder="Search...">
+					</div> <!-- .search-form -->
+                    <div class="mobile-navigation"></div> <!--.mobile-navigation -->
+               </div> <!-- .main-navigation-->
+
+               <div class="breadcrumbs">
+                    <div class="container">
+                       <a href="homepage.html">Home</a>
+                       <span>Cart</span>
+                    </div>
+               </div>     
+           </div> <!-- .container -->
+       </div> <!-- .site-header -->
+
+       <div class="main-content">
+           <div class="container">
+               <div class="page">
+                   <table class="cart">
+                       <thead>
+                           <tr>
+                               <th class="product-name">Name</th>
+                               <th class="product-price">Price</th>
+                               <th class="product-qty">Quantity</th>
+                               <th class="product-total">Total</th>
+                               <th class="action"></th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <td class="product-name">
+                               <div class="product-thumbnail">
+                                  <img src="img/cart-thumb-1.jpg" alt=""> 
+                               </div>
+                           </td>
+                       </tbody>
+                   </table>
+               </div>
+           </div>
+       </div>
     </div> <!-- .site-content -->
 </body>
 </html>
