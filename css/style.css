@@ -1,0 +1,13 @@
+/*
+ * Header Styles
+ */
+
+ .site-header{
+	background-color: lightblue;
+	position: relative;
+
+	> .container{
+		@include clearfix;
+		position: relative;
+		padding: 60px 15px 0;
+	}
