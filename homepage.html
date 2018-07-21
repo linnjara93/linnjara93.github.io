@@ -9,6 +9,23 @@
           background-image: url(img/346.jpg);
           align-content: center;
         }
+        .home-slider{
+	        position: relative;
+	        margin-top: -40px;
+	        margin-bottom: 30px;
+	        background: $secondary-color;
+        
+          .slides{
+		      @include clearfix;
+
+		      li{
+			    min-height: 575px;
+			    padding-top: 100px;
+			    padding-bottom: 50px;
+			    background-size: cover;
+			    background-position: center center;
+		      }
+	      }
      </style>
   </head>
 
