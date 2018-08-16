@@ -3,7 +3,7 @@ html{
 }
 
 
-#slide{
+div{
 	display: inline-block;
 	margin: auto;
 	height: 800px;
