@@ -4,10 +4,10 @@ html{
 
 
 .home-slider{
-	display: block;
-	margin: auto;
+	display: inline-block;
 	height: 400px;
 	width: 600px;
 	border: solid black 6px;
+	align-content: center;
 }
 
