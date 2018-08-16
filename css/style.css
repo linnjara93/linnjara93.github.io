@@ -6,7 +6,8 @@ html{
 .home-slider{
 	display: block;
 	margin: auto;
-	width: 344px;
+	height: 400px;
+	width: 500px;
 	border: solid black 6px;
 	align-content: center;
 }
