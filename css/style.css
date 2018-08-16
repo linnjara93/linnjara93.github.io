@@ -2,3 +2,12 @@ html{
 	background-image: url(img/346.jpg);
 }
 
+#slide{
+	display: inline-block;
+	margin: auto;
+	height: 800px;
+	width: 900px;
+	border: solid black 6px;
+	
+}
+
