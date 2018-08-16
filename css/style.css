@@ -4,12 +4,11 @@ html{
 
 
 .home-slider{
-	display: block;
+	display: inline-block;
 	margin: auto;
 	height: 400px;
-	width: 500px;
+	width: 600px;
 	border: solid black 6px;
-	align-content: center;
 	float: left;
 }
 
