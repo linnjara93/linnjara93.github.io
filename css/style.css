@@ -10,5 +10,6 @@ html{
 	width: 500px;
 	border: solid black 6px;
 	align-content: center;
+	float: left;
 }
 
