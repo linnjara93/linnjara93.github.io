@@ -3,7 +3,7 @@ html{
 }
 
 
-div{
+.container{
 	display: inline-block;
 	margin: auto;
 	height: 800px;
