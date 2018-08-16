@@ -3,12 +3,11 @@ html{
 }
 
 
-.slide-content{
-	display: inline-block;
+.home-slider{
+	display: block;
 	margin: auto;
 	height: 400px;
 	width: 600px;
 	border: solid black 6px;
-	float: left;
 }
 
