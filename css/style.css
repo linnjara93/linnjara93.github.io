@@ -5,8 +5,8 @@ html{
 
 .home-slider{
 	display: inline-block;
-	height: 1000px;
-	width: 900px;
+	height: 900px;
+	width: 800px;
 	padding: 0%;
 	border: solid black 5px;
 	align-content: center;
