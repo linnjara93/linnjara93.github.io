@@ -2,6 +2,14 @@ html{
 	background-image: url(img/346.jpg);
 }
 
+#site-header{
+	display: inline;
+	margin: 9px;
+	padding: 0%;
+	border: solid lightslategrey 3px;
+	align-content: center;
+}
+
 .home-slider{
 	display: inline-block;
 	margin: auto;
