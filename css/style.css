@@ -11,6 +11,7 @@ html{
 	padding: 0%;
 	border: solid black 5px;
 	align-content: center;
+	text-align: left;
 }
 
 .slide-content{
