@@ -5,7 +5,7 @@ html{
 .menu, .search-form{
 	display: inline-block;
 	margin: 9px;
-	padding: 0%;
+	padding: 10%;
 	border: solid lightslategrey 3px;
 	align-content: center;
 }
