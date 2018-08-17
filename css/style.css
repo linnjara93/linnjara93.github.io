@@ -3,7 +3,7 @@ html{
 }
 
 
-.home-slider{
+.slide-content{
 	display: inline-block;
 	height: 400px;
 	width: 600px;
@@ -11,6 +11,4 @@ html{
 	border: solid black 5px;
 	align-content: center;
 }
-
-
 
