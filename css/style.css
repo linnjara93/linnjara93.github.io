@@ -8,14 +8,17 @@ body{
 
 #branding{
 	display: inline;
-	margin: auto;
+	margin: 9px;
+	padding: 0%;
+	border: solid lightslategrey 3px;
+	align-content: center;
 }
 
 .home-slider{
 	display: inline-block;
 	margin: auto;
 	height: 1200px;
-	max-width: 800px;
+	width: 800px;
 	padding: 0%;
 	border: solid black 5px;
 	align-content: left;
