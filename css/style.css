@@ -3,7 +3,7 @@ html{
 }
 
 ul.menu, .search-form{
-	display: inline-block;
+	display: inline;
 	margin: 0px;
 	padding: 1%;
 	border: solid lightslategrey 3px;
