@@ -2,10 +2,10 @@ html{
 	background-image: url(img/346.jpg);
 }
 
-.main-navigation, .search-form{
+ul.menu, .search-form{
 	display: inline-block;
 	margin: 9px;
-	padding: 5%;
+	padding: 1%;
 	border: solid lightslategrey 3px;
 	align-content: center;
 }
