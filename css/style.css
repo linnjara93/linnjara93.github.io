@@ -4,7 +4,7 @@ html{
 
 
 .home-slider{
-	display: block;
+	display: inline-block;
 	margin: auto;
 	height: 1200px;
 	width: 800px;
