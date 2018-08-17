@@ -21,11 +21,11 @@ ul.menu, .search-form{
 	text-align: left;
 }
 
-.slide-content{
+.slide-image{
 	display: inline-block;
 	height: 394px;
     width: 344px;
 	border: thin white 3px;
 	width: 33.3%;
-    align-content: center;
+	align-content: right;
 }
