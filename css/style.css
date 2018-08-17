@@ -4,7 +4,7 @@ html{
 
 ul.menu, .search-form{
 	display: inline-block;
-	margin: 9px;
+	margin: 0px;
 	padding: 1%;
 	border: solid lightslategrey 3px;
 	align-content: center;
