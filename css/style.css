@@ -7,7 +7,7 @@ html{
 	display: inline-block;
 	height: 1000px;
 	width: 900px;
-	padding: 10%;
+	padding: 0%;
 	border: solid black 5px;
 	align-content: center;
 }
@@ -15,6 +15,7 @@ html{
 .slide-content{
 	display: inline-block;
 	height: 234px;
+	border: thin white 3px;
 	width: 33.3%;
     align-content: center;
 }
