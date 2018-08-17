@@ -2,6 +2,9 @@ html{
 	background-image: url(img/346.jpg);
 }
 
+body{
+	font-size: 0px;
+}
 
 .home-slider{
 	display: inline-block;
