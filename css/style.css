@@ -6,11 +6,16 @@ body{
 	font-size: 0px;
 }
 
+#branding{
+	display: inline;
+	margin: auto;
+}
+
 .home-slider{
 	display: inline-block;
 	margin: auto;
 	height: 1200px;
-	width: 800px;
+	max-width: 800px;
 	padding: 0%;
 	border: solid black 5px;
 	align-content: left;
