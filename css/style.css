@@ -7,7 +7,10 @@ html{
 	display: inline-block;
 	height: 400px;
 	width: 600px;
-	border: solid black 6px;
+	padding: 10%;
+	border: solid black 5px;
 	align-content: center;
 }
+
+
 
