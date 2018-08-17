@@ -15,7 +15,8 @@ html{
 
 .slide-content{
 	display: inline-block;
-	height: 234px;
+	height: 394px;
+    width: 344px;
 	border: thin white 3px;
 	width: 33.3%;
     align-content: center;
