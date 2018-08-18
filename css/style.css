@@ -2,7 +2,7 @@ html{
 	background-image: url(img/346.jpg);
 }
 
-ul.menu, .search-form{
+ul.menu, div.search-form{
 	display: inline;
 	margin: 0px;
 	padding: 1%;
