@@ -1,5 +1,5 @@
-html{
-	background: url(img/346.jpg);
+body{
+	background-image: url(img/346.jpg);
 }
 
 li.menu-item, div.search-form{
