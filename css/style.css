@@ -4,10 +4,10 @@ body{
 
 li.menu-item, div.search-form{
 	display: inline-block;
-	margin: 10px;
+	margin: 0px;
 	padding: 0%;
 	width: fit-content;
-	align-content: center;
+	align-content: right;
 }
 
 div#slide.home-slider{
