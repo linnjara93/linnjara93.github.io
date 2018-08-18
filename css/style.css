@@ -33,7 +33,7 @@ div.slide-content{
 
 a#branding{
 	display: inline;
-	position: static;
+	position: absolute;
 	margin: auto;
 	height: 100px;
 	width: 1200px;
