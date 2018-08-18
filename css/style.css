@@ -5,8 +5,7 @@ body{
 li.menu-item, div.search-form{
 	display: inline-block;
 	margin: 0px;
-	padding: 0%;
-	width: fit-content;
+	padding: 10%;
 	align-content: right;
 }
 
