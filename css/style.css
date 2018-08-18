@@ -26,15 +26,12 @@ div.slide-content{
 	margin: auto;
 	height: 900px;
     width: 1200px;
-	border: thin white 2px;
 	width: 33.3%;
 	align-content: right;
 }
 
 a#branding{
 	display: inline;
-	position: static;
+	position: relative;
 	margin: auto;
-	
-
 }
