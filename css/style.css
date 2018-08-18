@@ -15,9 +15,8 @@ div#slide.home-slider{
 	display: inline-block;
 	margin: auto;
 	height: 1200px;
-	width: fit-content;
+	width: 900px;
 	padding: 0%;
-	align-content: right;
 	text-align: left;
 	
 }
