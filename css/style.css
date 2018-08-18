@@ -5,9 +5,9 @@ html{
 li.menu-item, div.search-form{
 	display: inline-block;
 	margin: 0px;
-	padding: 1%;
+	padding: 0%;
 	width: fit-content;
-	border: solid lightslategrey 3px;
+	border: thin lightslategrey 3px;
 	align-content: center;
 }
 
@@ -15,7 +15,7 @@ div#slide.home-slider{
 	display: inline-block;
 	margin: auto;
 	height: 1200px;
-	width: fit-content 800px;
+	width: fit-content;
 	padding: 0%;
 	border: solid black 5px;
 	align-content: right;
