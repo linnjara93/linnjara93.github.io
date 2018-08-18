@@ -6,9 +6,9 @@ li.menu-item, div.search-form{
 	display: inline-block;
 	margin: 10px;
 	padding: 0%;
-	width: 1200px;
-	height: 100px;
+	width: fit-content;
 	align-content: center;
+	position: relative;
 }
 
 div#slide.home-slider{
