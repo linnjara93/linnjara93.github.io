@@ -26,9 +26,18 @@ div#slide.home-slider{
 div.slide-content{
 	display: inline-block;
 	margin: auto;
-	height: 394px;
-    width: 344px;
-	border: thin white 3px;
+	height: 900px;
+    width: 1200px;
+	border: thin white 2px;
 	width: 33.3%;
 	align-content: right;
+}
+
+a#branding{
+	display: inline-block;
+	position: static;
+	margin: auto;
+	height: 100px;
+	width: 1200px;
+
 }
