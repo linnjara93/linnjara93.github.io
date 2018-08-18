@@ -7,8 +7,8 @@ li.menu-item, div.search-form{
 	margin: 0px;
 	padding: 0%;
 	width: fit-content;
-	border: thin lightslategrey 3px;
 	align-content: center;
+	position: relative;
 }
 
 div#slide.home-slider{
@@ -20,6 +20,7 @@ div#slide.home-slider{
 	border: solid black 5px;
 	align-content: right;
 	text-align: left;
+	
 }
 
 div.slide-content{
