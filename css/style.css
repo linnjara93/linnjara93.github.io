@@ -31,9 +31,8 @@ div.slide-content{
 }
 
 a#branding{
-	display: block;
+	display: inline-block;
 	margin: auto;
 	padding: 0px;
-	height: 100px;
-	width: 1200px;
+	position: absolute;
 }
