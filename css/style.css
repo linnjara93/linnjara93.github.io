@@ -10,7 +10,7 @@ ul.menu, .search-form{
 	align-content: center;
 }
 
-.home-slider{
+div#slide.home-slider{
 	display: inline-block;
 	margin: auto;
 	height: 1200px;
