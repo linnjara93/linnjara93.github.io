@@ -22,10 +22,11 @@ div#slide.home-slider{
 	text-align: left;
 }
 
-.slide-content{
+div.slide-content{
 	display: inline-block;
+	margin: auto;
 	height: 394px;
-    width: 344px;
+    width: fit-content 344px;
 	border: thin white 3px;
 	width: 33.3%;
 	align-content: right;
