@@ -30,7 +30,7 @@ div.slide-content{
 	align-content: right;
 }
 
-a#branding{
+a#branding, img.icon-home{
 	display: block;
 	margin: auto;
 	padding: 0px;
