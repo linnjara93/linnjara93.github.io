@@ -29,10 +29,3 @@ div.slide-content{
 	width: 33.3%;
 	align-content: right;
 }
-
-a#branding, img.icon-home{
-	display: inline-block;
-	margin: auto;
-	padding: 0px;
-	position: absolute;
-}
