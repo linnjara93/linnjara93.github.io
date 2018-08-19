@@ -2,11 +2,11 @@ body{
 	background-image: url(img/346.jpg);
 }
 
-li.menu-item, div.search-form{
+a.icon-home, li.menu-item, div.search-form{
 	display: inline-block;
 	margin: 0px;
-	padding: 10%;
-	align-content: right;
+	padding: 0%;
+	align-content: center;
 }
 
 div#slide.home-slider{
