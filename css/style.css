@@ -3,7 +3,7 @@ body{
 }
 
 a.icon-home, li.menu-item, div.search-form{
-	display: inline-block;
+	display: inline;
 	margin: 0px;
 	padding: 0%;
 	align-content: center;
