@@ -6,8 +6,9 @@ body{
 	display: inline;
 	margin: 0px;
 	align-content: center;
-	border: thin black 2px;
+	border: black 2px;
 	position: relative;
+	width: 100%;
 }
 
 div#slide.home-slider{
