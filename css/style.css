@@ -3,7 +3,7 @@ body{
 }
 
 .main-navigation{
-	display: inline-block;
+	display: inline;
 	margin: 0px;
 	align-content: center;
 	border: black 2px;
