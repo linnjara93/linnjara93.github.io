@@ -2,7 +2,7 @@ body{
 	background-image: url(img/346.jpg) no-repeat;
 }
 
-div.main-navigation{
+.main-navigation{
 	display: inline;
 	margin: 0px;
 	align-content: center;
