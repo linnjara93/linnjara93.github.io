@@ -1,12 +1,12 @@
 body{
-	background-image: url("img/346.jpg") no-repeat;
+	background-image: url("img/346.jpg");
 }
 
 .main-navigation{
 	display: inline;
 	margin: auto;
 	padding: 0%;
-	text-align: center;
+	text-align: left;
 	border: black 2px;
 	position: relative;
 }
