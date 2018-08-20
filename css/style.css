@@ -1,3 +1,7 @@
+body{
+	background-image: url(img/346.jpg);
+}
+
 a.icon-home, li.menu-item, div.search-form{
 	display: inline;
 	margin: 0px;
