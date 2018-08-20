@@ -6,7 +6,7 @@ body{
 	display: inline;
 	margin: 0px;
 	align-content: center;
-	border: black 2px;
+	border-radius: black 2px;
 }
 
 .home-slider{
