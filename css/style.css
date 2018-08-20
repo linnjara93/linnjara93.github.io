@@ -1,3 +1,10 @@
+a.icon-home, li.menu-item, div.search-form{
+	display: inline;
+	margin: 0px;
+	align-content: center;
+	border: thin black 2px;
+}
+
 div#slide.home-slider{
 	display: inline-block;
 	margin: auto;
