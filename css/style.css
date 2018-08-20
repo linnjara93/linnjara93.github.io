@@ -12,8 +12,8 @@ body{
 .home-slider{
 	display: inline-block;
 	margin: auto;
-	width: 90%;
 	max-height: 1200px;
 	max-width: 900px;
-	align-content: right;
+	align-content: center;
+	border-radius: solid black 3px;
 }
