@@ -9,14 +9,12 @@ body{
 	border: black 2px;
 }
 
-div#slide.home-slider{
+.home-slider{
 	display: inline-block;
 	margin: auto;
 	width: 90%;
 	max-height: 1200px;
 	max-width: 900px;
-	padding: 0%;
-	text-align: left;
 }
 
 div.slide-content{
