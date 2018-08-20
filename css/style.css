@@ -7,6 +7,7 @@ a.icon-home, li.menu-item, div.search-form{
 	margin: 0px;
 	padding: 0%;
 	align-content: center;
+	border: thin black 2px;
 }
 
 div#slide.home-slider{
