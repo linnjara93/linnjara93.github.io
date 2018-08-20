@@ -3,12 +3,10 @@ body{
 }
 
 .main-navigation{
-	display: inline;
+	display: inline-block;
 	margin: 0px;
 	align-content: center;
 	border: black 2px;
-	position: relative;
-	width: 100%;
 }
 
 div#slide.home-slider{
