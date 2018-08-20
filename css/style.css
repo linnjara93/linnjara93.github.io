@@ -4,16 +4,16 @@ body{
 
 .main-navigation{
 	display: inline;
-	margin: 0px;
+	margin: auto;
 	padding: 0%;
-	align-content: center;
-	border-radius: black 2px;
+	text-align: center;
+	border: black 2px;
 	position: relative;
 }
 
 .home-slider{
 	display: inline-block;
-	margin: auto;
+	margin: 0px;
 	max-height: 1200px;
 	max-width: 900px;
 	align-content: center;
