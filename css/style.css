@@ -2,7 +2,7 @@ body{
 	background-image: url("img/346.jpg");
 }
 
-.menu-item{
+.menu-item, .icon-home{
 	display: inline;
 	margin: auto;
 	padding: 0%;
