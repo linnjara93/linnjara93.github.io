@@ -14,6 +14,6 @@ body{
 .home-slider, .slide-content, .slide-image{
 	display: inline-block;
 	margin: 0px;
-	max-height: 1500;
-	max-width: 900px;
+	max-height: 900px;
+	max-width: 1200;
 }
