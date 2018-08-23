@@ -11,10 +11,16 @@ body{
 	position: relative;
 }
 
-.home-slider, .slide-content, .slide-image{
+.home-slider, .slide-content,{
 	display: inline-block;
 	margin: 0px;
 	height: 200px;
 	width: 600px;
 	position: relative;
+}
+
+.slide-image{
+	width: 344px;
+	height:394px;
+	float: right;
 }
