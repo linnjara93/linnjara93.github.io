@@ -21,7 +21,9 @@ body{
 }
 
 .slide-image{
+	display: block;
 	width: 244px;
 	height:294px;
 	float: right;
+	position: static;
 }
