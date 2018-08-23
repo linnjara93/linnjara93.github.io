@@ -11,7 +11,7 @@ body{
 	position: relative;
 }
 
-.home-slider{
+.home-slider, .slide-content, .slide-image{
 	display: inline-block;
 	margin: 0px;
 	max-height: 1200px;
