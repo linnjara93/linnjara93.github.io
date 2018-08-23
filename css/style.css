@@ -28,7 +28,7 @@ body{
 
 section, #mainbox, #mainbox2{
 	display: inline-block;
-	margin: auto;
+	margin: 0px;
 	width: 25%;
 	height: 450px;
 }
