@@ -25,3 +25,11 @@ body{
 	width: 244px;
 	height:294px;
 }
+
+section, .product-list .figure-image{
+	display: inline-block;
+	margin: auto;
+	width: 25%;
+	height: 450px;
+    position: static;
+}
