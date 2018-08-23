@@ -30,4 +30,5 @@ section, #mainbox, #mainbox2{
 	margin: auto;
 	width: 1200px;
 	height: 450px;
+	border: solid black 2px;
 }
