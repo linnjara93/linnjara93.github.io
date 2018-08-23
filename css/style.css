@@ -11,7 +11,7 @@ body{
 	position: relative;
 }
 
-.home-slider, .slide-content,{
+.home-slider, .slide-content{
 	display: block;
 	margin: 0px;
 	height: 200px;
@@ -24,5 +24,4 @@ body{
 	display: inline-block;
 	width: 244px;
 	height:294px;
-
 }
