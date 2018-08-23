@@ -31,13 +31,3 @@ section, #mainbox, #mainbox2{
 	width: 1200px;
 	height: 450px;
 }
-
-a{
-	width: 10px;
-	height: 10px;
-	display: block;
-	border-radius: 50%;
-	background-color: white;
-	cursor: pointer;
-	overflow: hidden;
-}
