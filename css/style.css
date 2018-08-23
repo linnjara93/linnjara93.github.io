@@ -26,7 +26,7 @@ body{
 	height:294px;
 }
 
-section, #mainbox{
+section, #mainbox, #mainbox2{
 	display: inline-block;
 	margin: auto;
 	width: 25%;
