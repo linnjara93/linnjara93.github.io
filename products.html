@@ -6,6 +6,20 @@
         <title>Brøderbund Software | Products</title>
 		<link rel="icon" href="img/favicon.jpg">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body{
+			  background-image: url("img/346.jpg");
+			}
+
+			.filter{
+		      margin: 33px;
+			}
+
+			.pagination{
+		  	  margin: 42px;
+			}
+	    </style>
 	</head>
 	<body>
 		
@@ -13,22 +27,22 @@
 			<div class="site-header">
 				<div class="container">
 					<a href="index.html" id="branding">
-						<img src="img/colorful-logo.png" alt="main logo" class="logo" width="50" height="50">
+						<img id="logo" src="img/colorful-logo.png" alt="Company Logo" class="logo" width="40" height="40">
 						<div class="logo-text">
-							<h1 class="site-title">Brøderbund Software</h1>
-							<small class="site-description"><em>One game at a time</em></small>
+						    <h1 class="site title">Brøderbund Software</h1>
+						    <small class="site-description"><em>One game at a time</em></small>
 						</div>
 					</a>
 
 					<div class="right-section pull-right">
-						<a href="cart.html" class="cart"><i class="icon-cart"></i> 0 items in cart</a>
-						<a href="#">My Account</a>
-						<a href="#">Logout <small>(Lorem Ipsum)</small></a>
+						<a href="cart.html" class="icon-cart">0 items in cart</a>
+						<a href="register.html" target="blank"class="login-button">Login/Register</a>
 					</div>
 
 					<div class="main-navigation">
                         <h3 class="menu-title">Menu</h3>
-						<a href="index.html"><img src="img/home.png" class="icon-home" width="50" height="50">Home</a>
+						<small class="menu-title">Menu</small>
+                        <a href="index.html"><img src="img/home.png" class="icon-home" width="30" height="30"></a>
                         <ul class="menu">
 							<li class="menu-item"><a href="products.html">Accessories</a></li>
 							<li class="menu-item"><a href="products.html">Promotions</a></li>
@@ -36,19 +50,10 @@
 							<li class="menu-item"><a href="products.html">Playstation</a></li>
 							<li class="menu-item"><a href="products.html">Xbox</a></li>
 							<li class="menu-item"><a href="products.html">Wii</a></li>
-						</ul>
+                        </ul>
 						<div class="search-form">
-							<label><img src="images/icon-search.png"></label>
+							<label><img src="img/icon-search.png"></label>
 							<input type="text" placeholder="Search...">
-						</div>
-
-						<div class="mobile-navigation"></div>
-					</div>
-
-					<div class="breadcrumbs">
-						<div class="container">
-							<a href="index.html">Home</a>
-							<span>Play Station Games</span>
 						</div>
 					</div>
 				</div>
@@ -94,7 +99,7 @@
 								<a href="#" class="page-number">2</a>
 								<a href="#" class="page-number">3</a>
 								<a href="#" class="page-number">...</a>
-								<a href="#" class="page-number">12</a>
+								<a href="#" class="page-number">10</a>
 								<a href="#" class="page-number"><i class="fa fa-angle-right"></i></a>
 							</div>
 						</div>
@@ -222,10 +227,10 @@
 							<div class="widget">
 								<h3 class="widget-title">Information</h3>
 								<ul class="no-bullet">
-									<li><a href="#">Site map</a></li>
-									<li><a href="#">About us</a></li>
-									<li><a href="#">FAQ</a></li>
-									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="index.html">Site map</a></li>
+									<li><a href="about.html">About us</a></li>
+									<li><a href="index.html">FAQ</a></li>
+									<li><a href="index.html">Privacy Policy</a></li>
 									<li><a href="contact.html">Contact</a></li>
 								</ul>
 							</div>
@@ -235,11 +240,11 @@
 							<div class="widget">
 								<h3 class="widget-title">Consumer Service</h3>
 								<ul class="no-bullet">
-									<li><a href="#">Secure</a></li>
-									<li><a href="#">Shipping &amp; Returns</a></li>
-									<li><a href="#">Shipping</a></li>
-									<li><a href="#">Orders &amp; Returns</a></li>
-									<li><a href="#">Group Sales</a></li>
+									<li><a href="cart.html">Secure</a></li>
+									<li><a href="cart.html">Shipping &amp; Returns</a></li>
+									<li><a href="cart.html">Shipping</a></li>
+									<li><a href="cart.html">Orders &amp; Returns</a></li>
+									<li><a href="index.html">Group Sales</a></li>
 								</ul>
 							</div>
                         </div>
@@ -248,11 +253,11 @@
 							<div class="widget">
 								<h3 class="widget-title">My Account</h3>
 								<ul class="no-bullet">
-									<li><a href="#">Login/Register</a></li>
-									<li><a href="#">Settings</a></li>
-									<li><a href="#">Cart</a></li>
-									<li><a href="#">Order Tracking</a></li>
-									<li><a href="#">Logout</a></li>
+									<li><a href="register.html">Login/Register</a></li>
+									<li><a href="indez.html">Settings</a></li>
+									<li><a href="cart.html">Cart</a></li>
+									<li><a href="cart.html">Order Tracking</a></li>
+									<li><a href="index.html">Logout</a></li>
 								</ul>
 							</div>
 						</div>
@@ -264,40 +269,20 @@
 									<input type="text" placeholder="Enter your email...">
 									<input type="submit" value="Subsribe">
 								</form>
+								<h2 class="section-title"><a href="register.html" target="blank">Register</a></h2>
 							</div>
 						</div>
 					</div>
-
 					<div class="colophon">
 						<div class="copy">Copyright 2018 Brøderbund Software. All rights reserved.</div>
                         <div class="social-links square">
-                            <h3><strong>Share</strong></h3>
-                            <a href="https://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="https://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="https://plus.google.com" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                            <a href="https://www.pinterest.com" class="pinterest"><i class="fa fa-pinterest"></i></a>
+                            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                            <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                            <a href="https://plus.google.com" class="fa fa-google"></a>
+                            <a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
                         </div>
 					</div> 
 				</div> 
-			</div>
-		</div>
-
-		<div class="overlay"></div>
-
-		<div class="auth-popup popup">
-			<a href="#" class="close"><i class="fa fa-close"></i></a>
-			<div class="row">
-				<div class="col-md-6">
-					<h2 class="section-title">Login</h2>
-					<form action="#">
-                        <input type="text" placeholder="Type your First Name...">
-                        <input type="password" placeholder="Password...">
-						<input type="submit" value="Login">
-					</form>
-				</div> 
-				<div class="col-md-6">
-                    <h2 class="section-title"><a href="register.html" target="blank">Register</a></h2>
-                </div>
 			</div>
 		</div>
 	</body>

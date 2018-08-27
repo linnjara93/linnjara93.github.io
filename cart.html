@@ -6,28 +6,103 @@
     <title>Brøderbund Software | Cart</title>
     <link rel="icon" href="img/favicon.jpg">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body{
+        background-image: url("img/346.jpg");
+      }
+      
+      .product{
+        margin-bottom: 25px;
+      }
+
+      .column-labels li{
+        display: inline-block;
+        margin: 47px;
+      }
+
+      .product-title{
+        display: inline-block;
+        text-align: left;
+        width: 115px;
+        margin-left: 28px;
+        margin-right: 4px;
+        margin-bottom: 139px;
+        margin-top: -14px;
+        position: absolute;
+      }
+
+      .product-image{
+		    float: left;
+		    margin-left: 46px;
+        margin-top: -8px;
+        text-align: right;
+      }
+
+      .product-price{
+        display: inline-block;
+        margin-bottom: 97px;
+        margin-left: 205px;
+        position: relative;
+        width: 25px;
+      }
+
+      .product-quantity{
+        display: inline-block;
+        margin-left: 90px;
+        width: 23px;
+      }
+
+      .total-price{
+        display: inline-block;
+        margin-left: 90px;
+        text-align: right;
+      }
+
+      input[type=number]{
+        width: 40px;
+      }
+
+      p{
+        display: inline-block;
+        height: 12px;
+        width: 92px;
+        text-align: left;
+        margin-left: 30px;
+        margin-top: 36px;
+      }
+      
+      #cart li{
+        display: inline-block;
+        text-align: justify;
+        margin: 28px;
+        position: relative;
+        font-size: 20px; 
+      }
+
+
+    </style>
   </head>
   <body>
     <div id="site-content">
        <div class="site-header">
            <div class="container">
                 <a href="index.html" id="branding">
-                <img src="img/colorful-logo.png" alt="main logo" class="logo" width="50" height="50">
-               <div class="logo-text">
-                <h1 class="site title">Brøderbund Software</h1>
-                <small class="site-description"><em>One game at a time</em></small>
-               </div>
-                 </a>
+                    <img id="logo" src="img/colorful-logo.png" alt="Company Logo" class="logo" width="40" height="40">
+                    <div class="logo-text">
+                        <h1 class="site title">Brøderbund Software</h1>
+                        <small class="site-description"><em>One game at a time</em></small>
+                    </div>
+                </a>
 
-               <div class="right-section pull-right">
-                <a href="cart.html" class="cart"><i class="icon-cart"></i> 3 items in cart</a>
-                <a href="#">My Account</a>
-                <a href="#">Logout <small>(Lorem Ipsum)</small></a>
-               </div>
+                <div class="right-section pull-right">
+                    <a href="cart.html" class="icon-cart">0 items in cart</a>
+                    <a href="register.html" target="blank"class="login-button">Login/Register</a>
+                </div>
 
-               <div class="main-navigation">
-                    <a href="index.html"><img src="img/home.png" class="icon-home" width="50" height="50">Home</a>
-                    <h3 class="menu-title">Menu</h3>
+                <div class="main-navigation">
+                    <small class="menu-title">Menu</small>
+                    <a href="index.html"><img src="img/home.png" class="icon-home" width="30" height="30"></a>
                     <ul class="menu">
                         <li class="menu-item"><a href="products.html">Accessories</a></li>
                         <li class="menu-item"><a href="products.html">Promotions</a></li>
@@ -36,125 +111,140 @@
                         <li class="menu-item"><a href="products.html">Xbox</a></li>
                         <li class="menu-item"><a href="products.html">Wii</a></li>
                     </ul>
-
+                       
                     <div class="search-form">
-						<label><img src="img/icon-search.png"></label>
-						<input type="text" placeholder="Search...">
+                        <label><img src="img/icon-search.png"></label>
+                        <input type="text" placeholder="Search...">
                     </div>
-                    
-                    <div class="mobile-navigation"></div>
-                </div>   
+                </div>
            </div>
        </div>
 
        <main class="main-content">
            <div class="container">
                <div class="page">
-                   <table class="cart">
-                       <thead>
-                           <tr>
-                               <th class="product-name">Product Name</th>
-                               <th class="product-price">Price</th>
-                               <th class="product-qty">Quantity</th>
-                               <th class="product-total">Total</th>
-                               <th class="action"></th>
-                           </tr>
-                       </thead>
-                       <tbody>
-                          <tr>
-                           <td class="product-name">
-                               <div class="product-thumbnail">
-                                  <img src="img/cart-thumb-1.jpg" alt="Product preview"> 
-                               </div>
-                               <div class="product-detail">
-                                   <h3 class="product-title">GTA V</h3>
-                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nobis architecto dolorum, alias laborum sit odit.</p>
-                               </div>
-                           </td>
-
-                           <td class="product-price">$25.00</td>
-                           <td class="product-qty">
-                               <select name="#">
-                                   <option value="1">1</option>
-                                   <option value="2">2</option>
-                                   <option value="3">3</option>
-                               </select>
-                               <td class="product-total">$25.00</td>
-                               <td class="action"><a href="#"><i class="fa fa-times"></i></a></td>
-                           </td>
-                          </tr>
-
-                           <tr>
-                             <td class="product-name">
-                               <div class="product-thumbnail">
-                                   <img src="img/cart-thumb-2.jpg" alt="Product Preview">
-                               </div>
-                               <div class="product-detail">
-                                   <h3 class="product-title">Big Game Hunter</h3>
-                                   <p>Iure nobis architecto dolorum, alias laborum sit odit, saepe expedita similique eius enim quasi obcaecati voluptates.</p>
-                               </div> 
-                             </td>
-                             <td class="product-price">$22.00</td>
-								<td class="product-qty">
-									<select name="#">
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-									</select>
-                               </td>
-                               <td class="product-total">$22.00</td>
-							   <td class="action"><a href="#"><i class="fa fa-times"></i></a></td>
-                            </tr>
-                            <tr>
-                                <td class="product-name">
-                                    <div class="product-thumbnail">
-                                        <img src="img/cart-thumb-3.jpg" alt="Product Preview">
-                                    </div>
-                                    <div class="product-detail">
-                                        <h3 class="product-title">Metal Gear Solid</h3>
-                                        <p>Alias laborum sit odit, saepe expedita similique eius enim quasi obcaecati voluptates, autem eveniet ratione veniam omnis modi.</p>
-                                    </div> 
-                                  </td>
-                                  <td class="product-price">$30.00</td>
-                                     <td class="product-qty">
-                                         <select name="#">
-                                             <option value="1">1</option>
-                                             <option value="2">2</option>
-                                             <option value="3">3</option>
-                                         </select>
-                                     </td>
-                                <td class="product-total">$30.00</td>
-                                <td class="action"><a href="#"><i class="fa fa-times"></i></a></td>
-                            </tr>
-                       </tbody>
-                   </table>
-
-                   <div class="cart-total">
-                       <p><strong>Subtotal</strong>$77.00</p>
-                       <p><strong>Shipment</strong>$18.00</p>
-                       <p class="total"><strong>Cart Total</strong>$95.00</p>
-                       <p>	
-                            <button><a href="#" class="button muted">Continue Shopping</a></button>
-                            <button><a href="#" class="button">Finalize and pay</a></button>
-                       </p>
-                   </div> 
+                    <div class="shopping-cart">
+                        <ul class="column-labels">
+                            <li class="product-image">Image</li>
+                            <li class="product-details">Product</li>
+                            <li class="product-price">Price</li>
+                            <li class="product-quantity">Quantity</li>
+                            <li class="product-line-price">Total</li>
+                        </ul>
+                          
+                        <div class="product">
+                          <div class="product-image">
+                            <img src="img/cart-thumb-1.jpg" alt="Product preview">
+                          </div>
+                          <div class="product-details">
+                            <div class="product-title">Need For Speed Rivals</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                          </div>
+                          <div class="product-price">$21.90</div>
+                          <div class="product-quantity">
+                            <input type="number" value="1" min="1">
+                          </div>
+                          <div class="total-price">$21.90</div>
+                        </div>
+                          
+                        <div class="product">
+                          <div class="product-image">
+                            <img src="img/cart-thumb-3.jpg" alt="Product Preview">
+                          </div>
+                          <div class="product-details">
+                            <div class="product-title">Big Game Hunter</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                            </div>
+                            <div class="product-price">$22.00</div>
+                            <div class="product-quantity">
+                              <input type="number" value="1" min="1">
+                            </div>
+                            <div class="total-price">$22.00</div>
+                        </div>
+                        
+                        <div class="cart">                        
+                          <div class="cart-total">
+                           <ul>
+                             <li><h3>Cart Total</h3></li>
+                             <li><strong>Subtotal:</strong>$43.90</li>
+                             <li><strong>Tax:</strong>$3.60</li>
+                             <li><strong>Grand total:</strong>$89.50</li>
+                             <li><strong>Shipment:</strong>$10.50</li>
+                             <li><strong>Total</strong>$100.00</li>
+                             <button><a href="index.html" class="button">Continue Shopping</a></button>
+                             <button><a href="index.html" class="button">Checkout</a></button>
+                            </ul>
+                          </div>
+                        </div>  
+                    </div>
                </div>
            </div> 
        </div>
     </div>
 
     <div class="site-footer">
-        <div class="container">
-            <div class="colophon">
-               <div class="copy">Copyright 2018 Brøderbund Software. All rights reserved.</div>
-                 <div class="social-links-square">
-                    <a href="https://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="https://plus.google.com" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                    <a href="https://www.pinterest.com" class="pinterest"><i class="fa fa-pinterest"></i></a>
-               </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="widget">
+              <h3 class="widget-title">Information</h3>
+              <ul class="no-bullet">
+                <li><a href="index.html">Site Map</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html">FAQ</a></li>
+                <li><a href="index.html">Privacy Policy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-md-2">
+            <div class="widget">
+              <h3 class="widget-title">Consumer Service</h3>
+              <ul class="no-bullet">
+                <li><a href="cart.html">Secure</a></li>
+                <li><a href="cart.html">Shipping &amp; Returns</a></li>
+                <li><a href="cart.html">Shipping</a></li>
+                <li><a href="cart.html">Orders &amp; Returns</a></li>
+                <li><a href="index.html">Group Sales</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-md-2">
+            <div class="widget">
+              <h3 class="widget-title">My Account</h3>
+                <ul class="no-bullet">
+                  <li><a href="register.html">Login/Register</a></li>
+                  <li><a href="index.html">Settings</a></li>
+                  <li><a href="cart.html">Cart</a></li>
+                  <li><a href="cart.html">Order Tracking</a></li>
+                  <li><a href="index.html">Logout</a></li>
+                </ul>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="widget">
+              <form action="#" class="newsletter-form">
+                <small class="form-title">Join our Newsletter</small>
+                  <br>
+                <input type="text" placeholder="Enter your email...">
+                <input type="submit" value="Subscribe">
+              </form>
+            </div> 
+          </div>
+        </div>
+        <div class="colophon">
+          <div class="copy">Copyright 2018 Brøderbund Software. All rights reserved.</div>
+            <div class="social-links-square">
+              <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+              <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+              <a href="https://plus.google.com" class="fa fa-google"></a>
+              <a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
             </div>
         </div>
+      </div>
     </div>
   </body>
 </html>

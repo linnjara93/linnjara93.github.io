@@ -6,6 +6,12 @@
      <title>Brøderbund Software | Home</title>
      <link rel="icon" href="img/favicon.jpg">
      <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <style>
+      body{
+        background-image: url("img/346.jpg");
+      }
+     </style>
   </head>
 
   <body class="slider-collapse">
@@ -13,39 +19,36 @@
       <div id="site-header">
        <div id="container">
           <a href="index.html" id="branding">
-            <img src="img/colorful-logo.png" alt="Logo principal" class="logo" width="50" height="50">
+            <img id="logo" src="img/colorful-logo.png" alt="Company Logo" class="logo" width="40" height="40">
             <div class="logo-text">
              <h1 class="site title">Brøderbund Software</h1>
              <small class="site-description"><em>One game at a time</em></small>
             </div>
           </a>
 
-          <div class="right-section">
-            <a href="cart.html" class="cart"><i class="icon-cart"></i>0 items in cart</a>
-            <a href="#" class="login-button">Login</a>
-            <a href="register.html" target="blank" class="register-button">Register</a>
+          <div class="right-section pull-right">
+            <a href="cart.html" class="icon-cart">0 items in cart</a>
+            <a href="register.html" target="blank"class="login-button">Login/Register</a>
           </div>
 
           <div class="main-navigation">
-            <h3 class="menu-title">Menu</h3>
-           <a href="index.html"><img src="img/home.png" class="icon-home" width="50" height="50">Home</a>
-           <ul class="menu">
+            <small class="menu-title">Menu</small>
+            <a href="index.html"><img src="img/home.png" class="icon-home" width="30" height="30"></a>
+            <ul class="menu">
 							<li class="menu-item"><a href="products.html">Accessories</a></li>
 							<li class="menu-item"><a href="products.html">Promotions</a></li>
 							<li class="menu-item"><a href="products.html">PC</a></li>
 							<li class="menu-item"><a href="products.html">Playstation</a></li>
 							<li class="menu-item"><a href="products.html">Xbox</a></li>
 							<li class="menu-item"><a href="products.html">Wii</a></li>
-           </ul>
+            </ul>
           
-           <div class="search-form">
+            <div class="search-form">
              <label><img src="img/icon-search.png"></label>
              <input type="text" placeholder="Search...">
-           </div>
-
-           <div class="mobile-navigation"></div>
+            </div>
           </div>
-       </div>
+        </div>
       </div>
 
     <div id="slide" class="home-slider">
@@ -54,13 +57,15 @@
        <div class="container">
          <div class="slide-content">
            <h2 class="slide-title">Kill Zone 3</h2>
-           <small class="slide-subtitle">$26.00</small>
+           <small class="slide-subtitle"><strong>$26.00</strong></small>
+           <img src="img/game-cover-1.jpg" class="slide-image" alt="Kill Zone 3 game cover">
            <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae 
              vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit 
              aut fugit, sed quia consequuntur.</p>
-           <a href="cart.html" class="button">Add to cart</a>
-           <img src="img/game-cover-1.jpg" class="slide-image" alt="Kill Zone 3 game cover">
+         </div>
+         <div>
+          <button><a href="cart.html" class="button">Add to cart</a></button>
          </div>
        </div>
       </li>
@@ -68,13 +73,16 @@
         <div class="container">
          <div class="slide-content">
            <h2 class="slide-title">Need For Speed Rivals</h2>
-           <small class="slide-subtitle">$21.90</small>
+           <small class="slide-subtitle"><strong>$21.90</strong></small>
+           <img src="img/game-cover-2.jpg" class="slide-image" alt="Need For Speed Rivals game cover">
            <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae 
              vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit 
              aut fugit, sed quia consequuntur.</p>
-           <a href="cart.html" class="button">Add to Cart</a>
-           <img src="img/game-cover-2.jpg" class="slide-image" alt="Need For Speed Rivals game cover">
+            
+          </div>
+          <div>
+            <button><a href="cart.html" class="button">Add to cart</a></button>
           </div>
         </div>
       </li>
@@ -82,13 +90,15 @@
         <div class="container">
          <div class="slide content">
            <h2 class="slide-title">Call of Duty: Ghosts</h2>
-           <small class="slide-subtitle">$26.90</small>
+           <small class="slide-subtitle"><strong>$26.90</strong></small>
+           <img src="img/game-cover-3.jpg" class="slide-image" alt="Call Of Duty: Ghosts game cover">
            <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae 
              vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit 
              aut fugit, sed quia consequuntur.</p>
-           <a href="cart.html" class="button">Add to Cart</a>
-           <img src="img/game-cover-3.jpg" class="slide-image" alt="Call Of Duty: Ghosts game cover">
+          </div>
+          <div>
+            <button><a href="cart.html" class="button">Add to cart</a></button>
           </div>
         </div>
       </li>
@@ -104,10 +114,10 @@
               <a href="#" class="all">Show All</a>
             </header>
 
-            <div id="mainbox" class="product-list">
-              <div id="box1" class="product">
+            <div class="product-list">
+              <div class="product">
                   <div class="inner-product">
-                      <div class="figure-image">
+                      <div id="box" class="figure-image">
                         <a href="game-details.html"></a><img src="img/game-1.jpg" alt="Game 1"></a>
                       </div>
                       <h3 class="product-title"><a href="#">Alpha Protocol</a></h3>
@@ -118,9 +128,9 @@
                   </div>
               </div>
 
-              <div id="box2"class="product">
+              <div class="product">
                 <div class="inner-product">
-                  <div class="figure-image">
+                  <div id="box" class="figure-image">
                     <a href="game-details.html"><img src="img/game-2.jpg" alt="Game 2"></a>
                   </div>
                     <h3 class="product-title"><a href="#">Grand Theft Auto V</a></h3>
@@ -131,22 +141,22 @@
                 </div>
               </div>
 
-              <div id="box3"class="product">
+              <div class="product">
                 <div class="inner-product">
-                 <div class="figure-image">
+                 <div id="box" class="figure-image">
                    <a href="game-details.html"><img src="img/game-3.jpg" alt="Game 3"></a>
                  </div>
                    <h3 class="product-title"><a href="#">Need For Speed Rivals</a></h3>
                    <small class="price">$21.90</small>
                    <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor...</p>
                    <button><a href="cart.html" class="button">Add to cart</a></button>
-                   <button><a href="#" class="button muted">More Details</a></button>
+                   <button><a href="game-details.html" class="button">More Details</a></button>
                 </div>
               </div>
 
-              <div id="box4"class="product">
+              <div class="product">
                 <div class="inner-product">
-                  <div class="figure-image">
+                  <div id="box" class="figure-image">
                     <a href="game-details.html"><img src="img/game-4.jpg" alt="Game 4"></a>
                   </div>
                     <h3 class="product-title"><a href="#">Big Game Hunter</a></h3>
@@ -166,49 +176,52 @@
               <a href="#" class="all">Show All</a>
             </header>
 
-            <div id="box5"class="product-list">
+            <div class="product-list">
               <div class="product">
                 <div class="inner-product">
                   <div class="figure-image">
                     <a href="game-details.html"><img src="img/game-5.jpg" alt="Game 5"></a>
                   </div>
-                    <h3 class="product-title"><a href="#">Watch For Dogs</a></h3>
+                    <h3 class="product-title"><a href="#">Watch Dogs</a></h3>
                     <small class="price">$23.00</small>
                     <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor...</p>
                     <button><a href="cart.html" class="button">Add to cart</a></button>
                     <button><a href="game-details.html" class="button muted">More Details</a></button>
                 </div>
               </div>
-              <div id="box6" class="product">
+              <div class="product">
                 <div class="inner-product">
                   <div class="figure-image">
                     <a href="game-details.html"><img src="img/game-6.jpg" alt="Game 6"></a>
                   </div>
                   <h3 class="product-title"><a href="#">Mortal Kombat</a></h3>
+                  <small class="price">$27.00</small>
                   <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor...</p>
                   <button><a href="cart.html" class="button">Add to cart</a></button>
                   <button><a href="game-details.html" class="button muted">More Details</a></button>
                 </div>
               </div>
 
-              <div id="box7" class="product">
+              <div class="product">
                 <div class="inner-product">
                   <div class="figure-image">
                     <a href="game-details.html"><img src="img/game-7.jpg" alt="Game 7"></a>
                   </div>
                   <h3 class="product-title">Metal Gear Solid</h3>
+                  <small class="price">$28.00</small>
                   <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor...</p>
                   <button><a href="cart.html" class="button">Add to cart</a></button>
                   <button><a href="game-details.html" class="button muted">More Details</a></button>
                 </div>
               </div>
 
-              <div id="box8" class="product">
+              <div class="product">
                 <div class="inner-product">
                   <div class="figure-image">
                     <a href="game-details.html"><img src="img/game-8.jpg" alt="Game 8"></a>
                   </div>
                   <h3 class="product-title">Nascar '14</h3>
+                  <small class="price">$26.00</small>
                   <p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor...</p>
                   <button><a href="cart.html" class="button">Add to cart</a></button>
                   <button><a href="game-details.html" class="button muted">More Details</a></button>
@@ -218,8 +231,8 @@
           </section>
         </div> 
       </div>
-    
     </main>
+
     <div class="site-footer">
       <div class="container">
         <div class="row">
@@ -227,10 +240,10 @@
             <div class="widget">
               <h3 class="widget-title">Information</h3>
               <ul class="no-bullet">
-                <li><a href="#">Site Map</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="index.html">Site Map</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html">FAQ</a></li>
+                <li><a href="index.hmtl">Privacy Policy</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
@@ -240,11 +253,11 @@
             <div class="widget">
               <h3 class="widget-title">Consumer Service</h3>
               <ul class="no-bullet">
-                  <li><a href="#">Secure</a></li>
-                  <li><a href="#">Shipping &amp; Returns</a></li>
-                  <li><a href="#">Shipping</a></li>
-                  <li><a href="#">Orders &amp; Returns</a></li>
-                  <li><a href="#">Group Sales</a></li>
+                  <li><a href="cart.html">Secure</a></li>
+                  <li><a href="cart.html">Shipping &amp; Returns</a></li>
+                  <li><a href="cart.html">Shipping</a></li>
+                  <li><a href="cart.html">Orders &amp; Returns</a></li>
+                  <li><a href="index.html">Group Sales</a></li>
               </ul>
             </div>
           </div>
@@ -253,19 +266,20 @@
             <div class="widget">
               <h3 class="widget-title">My Account</h3>
               <ul class="no-bullet">
-                  <li><a href="#">Login/Register</a></li>
-                  <li><a href="#">Settings</a></li>
-                  <li><a href="#">Cart</a></li>
-                  <li><a href="#">Order Tracking</a></li>
-                  <li><a href="#">Logout</a></li>
+                  <li><a href="register.html">Login/Register</a></li>
+                  <li><a href="index.html">Settings</a></li>
+                  <li><a href="cart.html">Cart</a></li>
+                  <li><a href="cart.html">Order Tracking</a></li>
+                  <li><a href="index.html">Logout</a></li>
               </ul>
             </div>
           </div>
 
           <div class="col-md-6">
             <div class="widget">
-              <h3 class="widget-title">Join our Newsletter</h3>
               <form action="#" class="newsletter-form">
+                <small class="form-title">Join our Newsletter</small>
+                <br>
                 <input type="text" placeholder="Enter your email...">
                 <input type="submit" value="Subscribe">
               </form>
@@ -276,15 +290,14 @@
         <div class="colophon">
           <div class="copy">Copyright 2018 Brøderbund Software. All rights reserved.</div>
            <div class="social-links square">
-                <a href="https://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a>
-                <a href="https://plus.google.com" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                <a href="https://www.pinterest.com" class="pinterest"><i class="fa fa-pinterest"></i></a>
+                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                <a href="https://plus.google.com" class="fa fa-google"></a>
+                <a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
            </div>
         </div> 
       </div>
     </div>
 
-    <div class="overlay"></div>
   </body>
 </html>
