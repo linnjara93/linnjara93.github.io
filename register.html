@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,25 +11,41 @@
       body{
         background-image: url("img/346.jpg");
       }
-    </style>
- </head>
- <body>
-        <div id="site-content">
-            <div class="site-header">
-                <div class="container">
-                    <a href="index.html" id="branding">
-                            <img src="img/colorful-logo.png" alt="main logo" class="logo" width="50" height="50">
-                        <div class="logo-text">
-                            <h1 class="site title">Brøderbund Software</h1>
-                            <small class="site-description"><em>One game at a time</em></small>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
 
-      <form action="http://www.google.com.uy">
-        <h1>Register Form</h1>
+      .site-content{
+	      max-width: 500px;
+        margin: auto;
+      }
+
+      .form{
+        margin: auto;
+        align-content: center;
+        height: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="site-content">
+      <div class="site-header">
+        <div class="container">
+          <a href="index.html" id="branding">
+              <img id="logo" src="img/colorful-logo.png" alt="Company Logo" class="logo" width="40" height="40">
+            <div class="logo-text">
+              <h1 class="site title">Brøderbund Software</h1>
+              <small class="site-description"><em>One game at a time</em></small>
+            </div>
+          </a>
+
+          <div class="right-section pull-right">
+              <a href="cart.html" class="icon-cart">0 items in cart</a>
+              <a href="register.html" target="blank"class="login-button">Login/Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form action="http://www.google.com.uy">
+        <h2>Register Form</h2>
       <div>
         <label for= "Field1">First Name</label>
         <br>
@@ -60,23 +76,22 @@
         <input type="password" minlength="8" maxlength="24" id="Field5" name="Password" required>
       </div>
         <br>
-        
         <input type="submit" value="submit">
         <input type="reset" value="Reset">
         
-      </form>
+    </form>
 
-      <div class="site-footer">
+    <div class="site-footer">
         <div class="container">
           <div class="row">
             <div class="col-md-2">
               <div class="widget">
                 <h3 class="widget-title">Information</h3>
                 <ul class="no-bullet">
-                  <li><a href="#">Site Map</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="index.html">Site Map</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="index.html">FAQ</a></li>
+                  <li><a href="index.html">Privacy Policy</a></li>
                   <li><a href="contact.html">Contact</a></li>
                 </ul>
               </div>
@@ -86,11 +101,11 @@
               <div class="widget">
                 <h3 class="widget-title">Consumer Service</h3>
                 <ul class="no-bullet">
-                    <li><a href="#">Secure</a></li>
-                    <li><a href="#">Shipping &amp; Returns</a></li>
-                    <li><a href="#">Shipping</a></li>
-                    <li><a href="#">Orders &amp; Returns</a></li>
-                    <li><a href="#">Group Sales</a></li>
+                    <li><a href="cart.html">Secure</a></li>
+                    <li><a href="cart.html">Shipping &amp; Returns</a></li>
+                    <li><a href="cart.html">Shipping</a></li>
+                    <li><a href="cart.html">Orders &amp; Returns</a></li>
+                    <li><a href="index.html">Group Sales</a></li>
                 </ul>
               </div>
             </div>
@@ -100,10 +115,10 @@
                 <h3 class="widget-title">My Account</h3>
                 <ul class="no-bullet">
                     <li><a href="register.html">Login/Register</a></li>
-                    <li><a href="#">Settings</a></li>
+                    <li><a href="index.html">Settings</a></li>
                     <li><a href="cart.html">Cart</a></li>
-                    <li><a href="#">Order Tracking</a></li>
-                    <li><a href="#">Logout</a></li>
+                    <li><a href="cart.html">Order Tracking</a></li>
+                    <li><a href="index.html">Logout</a></li>
                 </ul>
               </div>
             </div>
@@ -129,6 +144,6 @@
              </div>
           </div> 
         </div>
-      </div>
-   </body>
+    </div>
+  </body>
 </html>
