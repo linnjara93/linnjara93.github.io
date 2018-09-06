@@ -176,23 +176,15 @@ input[type="submit"]{
 	color: white;
 }
 
-@media screen and (max-width: 1200px){ 
-	
-  .slider-collapse{
-    width: 800px;
-	display: inline-block;
-  } 
+@media screen and (max-height: 1200px){
 	
   .main-navigation{
 	display: inline-block;
   }
-}
 
-@media screen and (min-width: 300px){
-	
   .slider-collapse{
-	width: 1000px;
 	display: inline-block;
+	width: 1000px;
+	height: 1500px;
   }
-  
 }
