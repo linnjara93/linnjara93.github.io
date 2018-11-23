@@ -1,149 +1,108 @@
 <!DOCTYPE html>
 <html>
- <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brøderbund Software | Register Form</title>
-    <link rel="icon" href="img/favicon.jpg">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="utf=8">
+    <title>Minelava Software Gaming | Register Form</title>
+    <link rel="icon" href="img/png-logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
       body{
         background-image: url("img/346.jpg");
       }
 
-      .site-content{
-	      max-width: 500px;
+      .register-form{
+        width: 600px;
         margin: auto;
-      }
-
-      .form{
-        margin: auto;
-        align-content: center;
-        height: 350px;
       }
     </style>
   </head>
+
   <body>
-    <div id="site-content">
-      <div class="site-header">
-        <div class="container">
-          <a href="index.html" id="branding">
-              <img id="logo" src="img/colorful-logo.png" alt="Company Logo" class="logo" width="40" height="40">
-            <div class="logo-text">
-              <h1 class="site title">Brøderbund Software</h1>
-              <small class="site-description"><em>One game at a time</em></small>
-            </div>
-          </a>
+    <header class="index-header">
+      <a href="index.html"><img id="title" src="img/name-logo.png" alt="Minelava Software Gaming name logo"></a>
+      <a class="cart-link" href="cart.html"><i class="fa fa-shopping-cart"> 0 items</i></a>
+      <input class="button" type="button" value="Login">
+      
+      <nav id="Menu">
+        <ul class="sidebar-menu">
+          <li class="sidebar-item"><a href="products.html">Accesories</a></li>
+          <li class="sidebar-item"><a href="products.html">Promotion</a></li>
+          <li class="sidebar-item"><a href="products.html">PC</a></li>
+          <li class="sidebar-item"><a href="products.html">Playstation</a></li>
+          <li class="sidebar-item"><a href="products.html">Xbox</a></li>
+          <li class="sidebar-item"><a href="products.html">Wii</a></li>
+        </ul>
 
-          <div class="right-section pull-right">
-              <a href="cart.html" class="icon-cart">0 items in cart</a>
-              <a href="register.html" target="blank"class="login-button">Login/Register</a>
-          </div>
-        </div>
-      </div>
-    </div>
+        <form id="search-bar">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+        </form>
+      </nav>
+    </header>
 
-    <form action="http://www.google.com.uy">
+    <div class="form">
+      <form id="register-form" action="http://www.google.com.uy" method="GET">
+
         <h2>Register Form</h2>
-      <div>
-        <label for= "Field1">First Name</label>
-        <br>
-        <input placeholder="Type your first name..." type="text" maxlength="30" id="field1" name="First Name" required>
-      </div>
 
-      <div>
-        <label for="Field2">Last Name</label>
-        <br>
-        <input placeholder="Type your last name..." type="text" maxlength="30" id="field2" name="Last Name" required>
-      </div>
+        <div>
+          <label for= "Field1">First Name</label>
+          <input class="field" type="text" placeholder="Type your first name..." maxlength="30" id="field1" name="First Name" required>
+        </div>
 
-      <div>
-        <label for="Field3">Email</label>
-        <br>
-        <input type="email" id="Field3" name="email" required>
-      </div>
+        <div>
+          <label for="Field2">Last Name</label>
+          <input class="field" type="text" placeholder="Type your last name..." maxlength="30" id="field2" name="Last Name" required>
+        </div>
 
-      <div>
-        <label for="Field4">Password</label>
-        <br>
-        <input type="password" minlength="8" maxlength="24" id="Field4" name="Password" required>
-      </div>
+        <div>
+          <label for="Field3">Email</label>
+          <input class="field" type="email" id="Field3" name="email" required>
+        </div>
+
+        <div>
+          <label for="Field4">Password</label>
+          <input class="field" type="password" minlength="8" maxlength="24" id="Field4" name="Password" required>
+        </div>
     
-      <div>
-        <label for="Field5">Confirm Password</label>
-        <br>
-        <input type="password" minlength="8" maxlength="24" id="Field5" name="Password" required>
-      </div>
+        <div>
+          <label for="Field5">Confirm Password</label>
+          <input class="field" type="password" minlength="8" maxlength="24" id="Field5" name="Password" required>
+        </div>
         <br>
         <input type="submit" value="submit">
         <input type="reset" value="Reset">
         
-    </form>
-
-    <div class="site-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-2">
-              <div class="widget">
-                <h3 class="widget-title">Information</h3>
-                <ul class="no-bullet">
-                  <li><a href="index.html">Site Map</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="index.html">FAQ</a></li>
-                  <li><a href="index.html">Privacy Policy</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-  
-            <div class="col-md-2">
-              <div class="widget">
-                <h3 class="widget-title">Consumer Service</h3>
-                <ul class="no-bullet">
-                    <li><a href="cart.html">Secure</a></li>
-                    <li><a href="cart.html">Shipping &amp; Returns</a></li>
-                    <li><a href="cart.html">Shipping</a></li>
-                    <li><a href="cart.html">Orders &amp; Returns</a></li>
-                    <li><a href="index.html">Group Sales</a></li>
-                </ul>
-              </div>
-            </div>
-  
-            <div class="col-md-2">
-              <div class="widget">
-                <h3 class="widget-title">My Account</h3>
-                <ul class="no-bullet">
-                    <li><a href="register.html">Login/Register</a></li>
-                    <li><a href="index.html">Settings</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="cart.html">Order Tracking</a></li>
-                    <li><a href="index.html">Logout</a></li>
-                </ul>
-              </div>
-            </div>
-  
-            <div class="col-md-6">
-              <div class="widget">
-                <h3 class="widget-title">Join our Newsletter</h3>
-                <form action="#" class="newsletter-form">
-                  <input type="text" placeholder="Enter your email...">
-                  <input type="submit" value="Subscribe">
-                </form>
-              </div> 
-            </div>
-          </div>
-  
-          <div class="colophon">
-            <div class="copy">Copyright 2018 Brøderbund Software. All rights reserved.</div>
-             <div class="social-links square">
-                  <a href="https://www.facebook.com" class="fa fa-facebook"></a>
-                  <a href="https://www.twitter.com" class="fa fa-twitter"></a>
-                  <a href="https://plus.google.com" class="fa fa-google"></a>
-                  <a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
-             </div>
-          </div> 
-        </div>
+      </form>
     </div>
+
+    <footer class="index-footer">
+        <div id=information>
+          <h4 class="info-title">Information</h4>
+          <ul class>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+          
+        <div id="my-account">   
+          <h4 class="account-title">My Account</h4>
+          <ul class="menu-account">
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="index.html">Logout</a></li>
+          </ul>
+        </div>  
+            
+        <div id="social-media">
+          <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+          <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+          <a href="https://plus.google.com" class="fa fa-google"></a>
+          <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+          <a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
+        </div>
+  
+        <p class="copyright">&#9400;2018 Minelava Software Gaming. All rights reserved.</p>
+      </footer>
   </body>
 </html>

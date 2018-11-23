@@ -1,310 +1,133 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Brøderbund Software | Products</title>
-		<link rel="icon" href="img/favicon.jpg">
-		<link rel="stylesheet" href="css/style.css">
+		<meta charset="utf=8">
+		<title>Products | Minelava Software Gaming</title>
+		<link rel="icon" href="img/png-logo.png">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/products.js"></script>
 		<style>
 			body{
 			  background-image: url("img/346.jpg");
-			}
-
-			.filter{
-		      margin: 33px;
-			}
-
-			.pagination{
-				border-radius: 3px;
-                padding: 20px 30px;
-                margin: 30px 0;
-			}
-
-			.product{
-		      width: 25%;
-              padding: 0, 15px;
-              float: left;
-              margin-bottom: 30px;
-			}
-
-			.site-content{
-	          max-width: 500px;
-              margin: auto;
+			  align-content: center;
 			}
 	    </style>
 	</head>
 	<body>
-		<div id="site-content">
-			<div class="site-header">
-				<div class="container">
-					<a href="index.html" id="branding">
-						<img id="logo" src="img/colorful-logo.png" alt="Company Logo" class="logo" width="40" height="40">
-						<div class="logo-text">
-						    <h1 class="site title">Brøderbund Software</h1>
-						    <small class="site-description"><em>One game at a time</em></small>
-						</div>
-					</a>
+		<header class="index-header">
+			<a href="index.html"><img id="title" src="img/name-logo.png" alt="Minelava Software Gaming name logo"></a>
+			<a class="cart-link" href="cart.html"><i class="fa fa-shopping-cart"> 0 items</i></a>
+			<input class="button" type="button" value="Login">
+			<a href="register.html"><input class="button" type="button" value="Register"></a>
+			  
+			<nav id="Menu">
+			  <ul class="sidebar-menu">
+				<li class="sidebar-item"><a href="products.html">Accesories</a></li>
+				<li class="sidebar-item"><a href="products.html">Promotion</a></li>
+				<li class="sidebar-item"><a href="products.html">PC</a></li>
+				<li class="sidebar-item"><a href="products.html">Playstation</a></li>
+				<li class="sidebar-item"><a href="products.html">Xbox</a></li>
+				<li class="sidebar-item"><a href="products.html">Wii</a></li>
+			  </ul>
 
-					<div class="right-section pull-right">
-						<a href="cart.html" class="icon-cart">0 items in cart</a>
-						<a href="register.html" target="blank"class="login-button">Login/Register</a>
-					</div>
-
-					<div class="main-navigation">
-                        <h3 class="menu-title"></h3>
-						<small class="menu-title"></small>
-                        <a href="index.html"><img src="img/home.png" class="icon-home" width="30" height="30"></a>
-                        <ul class="menu">
-							<li class="menu-item"><a href="products.html">Accessories</a></li>
-							<li class="menu-item"><a href="products.html">Promotions</a></li>
-							<li class="menu-item"><a href="products.html">PC</a></li>
-							<li class="menu-item"><a href="products.html">Playstation</a></li>
-							<li class="menu-item"><a href="products.html">Xbox</a></li>
-							<li class="menu-item"><a href="products.html">Wii</a></li>
-                        </ul>
-						<div class="search-form">
-							<label><img src="img/icon-search.png"></label>
-							<input type="text" placeholder="Search...">
-						</div>
-					</div>
-				</div>
-            </div>
+			  <form id="search-bar">
+				<input type="text" placeholder="Search.." name="search">
+				<button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+			  </form>
+			</nav> 
+	    </header>
             
-			<main class="main-content">
-				<div class="container">
-					<div class="page">
-						<div class="filter-bar">
-							<div class="filter">
-								<span>
-									<label>Sort by:</label>
-									<select name="#">
-										<option value="#">Popularity</option>
-										<option value="#">Highest Rating</option>
-										<option value="#">Lowest price</option>
-									</select>
-                                </span>
-                                
-								<span>
-									<label>Genre</label>
-									<select name="#">
-										<option value="#">Show All</option>
-										<option value="#">Action</option>
-										<option value="#">Racing</option>
-										<option value="#">Strategy</option>
-									</select>
-								</span>
-                                
-                                <span>
-									<label>Show:</label>
-									<select name="#">
-										<option value="#">8</option>
-										<option value="#">16</option>
-										<option value="#">24</option>
-									</select>
-								</span>
-							</div>
-
-							<div class="pagination">
-								<a href="#" class="page-number"><i class="fa fa-angle-left"></i></a>
-								<span class="page-number current">1</span>
-								<a href="#" class="page-number">2</a>
-								<a href="#" class="page-number">3</a>
-								<a href="#" class="page-number">...</a>
-								<a href="#" class="page-number">10</a>
-								<a href="#" class="page-number"><i class="fa fa-angle-right"></i></a>
-							</div>
-						</div>
+		<article>			
+			<section id="product-list">
+				<ul id="new-products">
+					<li>
+					    <a href=""></a><img class="product-image" src="" alt=""></a>
+						<h3 class="product-title"><a href="#"></a></h3>
+						<h4 class="product-price"></h4>
+						<p></p>
+					</li>
+				  
+					<li>
+					    <a href=""><img class="product-image" src="" alt=""></a>
+						<h3 class="product-title"><a href=""></a></h3>
+					    <h4 class="product-price"></h4>
+						<p></p>
+					</li>
+				  
+					<li>
+						<a href=""><img class="product-image" src="" alt=""></a>
+						<h3 class="product-title"><a href=""></a></h3>
+						<h4 class="product-price"></h4>
+						<p></p>
+					</li>
+				  
+					<li>
+						<a href=""><img class="product-image" src="" alt=""></a>
+						<h3 class="product-title"><a href=""></a></h3>
+						<h4 class="product-price"></h4>
+						<p></p>
+					</li>
+	     		</ul>
 						
-						<div class="product-list">
-							<div class="product">
-								<div class="inner-product">
-									<div id="box" class="figure-image">
-										<a href="game-details.html"></a><img src="img/game-1.jpg" alt="Game 1"></a>
-									</div>
-									<h3 class="product-title"><a href="#">Alpha Protocol</a></h3>
-									<small class="price">$19.00</small>
-									<p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor...</p>
-									<button><a href="cart.html" class="button">Add to cart</a></button>
-									<button><a href="#" class="button muted">More Details</a></button>
-								</div>
-							</div>
-				  
-							<div class="product">
-								<div class="inner-product">
-									<div id="box" class="figure-image">
-									  <a href="game-details.html"><img src="img/game-2.jpg" alt="Game 2"></a>
-									</div>
-									<h3 class="product-title"><a href="#">Grand Theft Auto V</a></h3>
-									<small class="price">$25.00</small>
-									<p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor...</p>
-								    <button><a href="cart.html" class="button">Add to cart</a></button>
-									<button><a href="#" class="button muted">More Details</a></button>
-								</div>
-							</div>
-				  
-						    <div class="product">
-								<div class="inner-product">
-								    <div id="box" class="figure-image">
-									 <a href="game-details.html"><img src="img/game-3.jpg" alt="Game 3"></a>
-								    </div>
-									<h3 class="product-title"><a href="#">Need For Speed Rivals</a></h3>
-									<small class="price">$21.90</small>
-									<p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor...</p>
-									<button><a href="cart.html" class="button">Add to cart</a></button>
-									<button><a href="game-details.html" class="button">More Details</a></button>
-								</div>
-							</div>
-				  
-							<div class="product">
-							    <div class="inner-product">
-									<div id="box" class="figure-image">
-									  <a href="game-details.html"><img src="img/game-4.jpg" alt="Game 4"></a>
-									</div>
-									<h3 class="product-title"><a href="#">Big Game Hunter</a></h3>
-									<small class="price">$22.00</small>
-									<p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor...</p>
-									<button><a href="cart.html" class="button">Add to cart</a></button>
-									<button><a href="#" class="button muted">More Details</a></button>
-								</div>
-							</div>
-				  
-						</div>
-								
-						<div class="product-list">
-							<div class="product">
-							    <div class="inner-product">
-									<div class="figure-image">
-									  <a href="game-details.html"><img src="img/game-5.jpg" alt="Game 5"></a>
-									</div>
-									<h3 class="product-title"><a href="#">Watch Dogs</a></h3>
-									<small class="price">$23.00</small>
-									<p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor...</p>
-									<button><a href="cart.html" class="button">Add to cart</a></button>
-									<button><a href="game-details.html" class="button muted">More Details</a></button>
-								</div>
-							</div>
+				<ul id="promotion-list">
+					<li>
+						<a href=""><img class="promotion-image" src="" alt=""></a>
+						<h3 class="promotion-title"><a href="#"></a></h3>
+						<h4 class="promotion-price"></h4>
+						<p></p>
+					</li>
+			  
+					<li>
+						<a href=""><img class="promotion-image" src="" alt=""></a>
+						<h3 class="promotion-title"><a href="#"></a></h3>
+						<h4 class="promotion-price"></h4>
+						<p></p>
+					</li>
+						
+					<li>
+						<a href=""><img class="promotion-image" src="" alt=""></a>
+						<h3 class="promotion-title"></h3>
+						<h4 class="promotion-price"></h4>
+						<p></p>
+					</li>
+						
+					<li>
+						<a href=""><img class="promotion-image" src="" alt=""></a>
+						<h3 class="promotion-title"></h3>
+						<h4 class="promotion-price"></h4>
+						<p></p>
+					</li>
+    			</ul>
+			</section>
+		</article>
 
-							<div class="product">
-								<div class="inner-product">
-									<div class="figure-image">
-									  <a href="game-details.html"><img src="img/game-6.jpg" alt="Game 6"></a>
-									</div>
-									<h3 class="product-title"><a href="#">Mortal Kombat</a></h3>
-									<small class="price">$27.00</small>
-									<p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor...</p>
-									<button><a href="cart.html" class="button">Add to cart</a></button>
-									<button><a href="game-details.html" class="button muted">More Details</a></button>
-								</div>
-							</div>
-				  
-							<div class="product">
-								<div class="inner-product">
-									<div class="figure-image">
-									  <a href="game-details.html"><img src="img/game-7.jpg" alt="Game 7"></a>
-									</div>
-									<h3 class="product-title">Metal Gear Solid</h3>
-									<small class="price">$28.00</small>
-									<p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor...</p>
-									<button><a href="cart.html" class="button">Add to cart</a></button>
-									<button><a href="game-details.html" class="button muted">More Details</a></button>
-								</div>
-							</div>
-				  
-							<div class="product">
-								<div class="inner-product">
-									<div class="figure-image">
-									  <a href="game-details.html"><img src="img/game-8.jpg" alt="Game 8"></a>
-									</div>
-									<h3 class="product-title">Nascar '14</h3>
-									<small class="price">$26.00</small>
-									<p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor...</p>
-									<button><a href="cart.html" class="button">Add to cart</a></button>
-									<button><a href="game-details.html" class="button muted">More Details</a></button>
-								</div>
-							</div>	
-						</div>
-
-						<div class="pagination-bar">
-							<div class="pagination">
-								<a href="#" class="page-number"><i class="fa fa-angle-left"></i></a>
-								<span class="page-number current">1</span>
-								<a href="#" class="page-number">2</a>
-								<a href="#" class="page-number">3</a>
-								<a href="#" class="page-number">...</a>
-								<a href="#" class="page-number">12</a>
-								<a href="#" class="page-number"><i class="fa fa-angle-right"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</main>
-
-			<div class="site-footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-2">
-							<div class="widget">
-								<h3 class="widget-title">Information</h3>
-								<ul class="no-bullet">
-									<li><a href="index.html">Site map</a></li>
-									<li><a href="about.html">About us</a></li>
-									<li><a href="index.html">FAQ</a></li>
-									<li><a href="index.html">Privacy Policy</a></li>
-									<li><a href="contact.html">Contact</a></li>
-								</ul>
-							</div>
-						</div>
-                        
-                        <div class="col-md-2">
-							<div class="widget">
-								<h3 class="widget-title">Consumer Service</h3>
-								<ul class="no-bullet">
-									<li><a href="cart.html">Secure</a></li>
-									<li><a href="cart.html">Shipping &amp; Returns</a></li>
-									<li><a href="cart.html">Shipping</a></li>
-									<li><a href="cart.html">Orders &amp; Returns</a></li>
-									<li><a href="index.html">Group Sales</a></li>
-								</ul>
-							</div>
-                        </div>
-                        
-						<div class="col-md-2">
-							<div class="widget">
-								<h3 class="widget-title">My Account</h3>
-								<ul class="no-bullet">
-									<li><a href="register.html">Login/Register</a></li>
-									<li><a href="index.html">Settings</a></li>
-									<li><a href="cart.html">Cart</a></li>
-									<li><a href="cart.html">Order Tracking</a></li>
-									<li><a href="index.html">Logout</a></li>
-								</ul>
-							</div>
-						</div>
-                        
-                        <div class="col-md-6">
-							<div class="widget">
-								<h3 class="widget-title">Join our newsletter</h3>
-								<form action="#" class="newsletter-form">
-									<input type="text" placeholder="Enter your email...">
-									<input type="submit" value="Subsribe">
-								</form>
-								<h2 class="section-title"><a href="register.html" target="blank">Register</a></h2>
-							</div>
-						</div>
-					</div>
-					<div class="colophon">
-						<div class="copy">Copyright 2018 Brøderbund Software. All rights reserved.</div>
-                        <div class="social-links square">
-                            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
-                            <a href="https://www.twitter.com" class="fa fa-twitter"></a>
-                            <a href="https://plus.google.com" class="fa fa-google"></a>
-                            <a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
-                        </div>
-					</div> 
-				</div> 
+		<footer class="index-footer">
+			<div id=information>
+				<h4 class="info-title">Information</h4>
+				<ul>
+					<li><a href="about.html">About</a></li>
+			    	<li><a href="contact.html">Contact</a></li>
+				</ul>
 			</div>
-		</div>
+				  
+			<div id="my-account">   
+				<h4 class="account-title">My Account</h4>
+				<ul class="menu-account">
+			    	<li><a href="cart.html">Cart</a></li>
+				    <li><a href="index.html">Logout</a></li>
+				</ul>
+			</div>  
+					
+			<div id="social-media">
+				<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+			    <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+			    <a href="https://plus.google.com" class="fa fa-google"></a>
+			    <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+			    <a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
+			</div>
+		  
+			<p class="copyright">&#9400;2018 Minelava Software Gaming. All rights reserved.</p>
+		</footer>
 	</body>
 </html>

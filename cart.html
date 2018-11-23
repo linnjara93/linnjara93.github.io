@@ -1,248 +1,267 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brøderbund Software | Cart</title>
-    <link rel="icon" href="img/favicon.jpg">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf=8">
+    <title>Cart | Minelava Software Gaming</title>
+    <link rel="icon" href="img/png-logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/checkout.js"></script>
     <style>
       body{
         background-image: url("img/346.jpg");
       }
-      
-      .product{
-        margin-bottom: 25px;
+
+      input[type=number]{
+        width: 30px;
       }
 
-      .column-labels li{
+      .cart-bar-items{
         display: inline-block;
-        margin: 47px;
+        margin: 83px;
       }
 
-      .product-title{
-        display: inline-block;
-        text-align: left;
-        width: 115px;
-        margin-left: 28px;
-        margin-right: 4px;
-        margin-bottom: 139px;
-        margin-top: -14px;
-        position: absolute;
-      }
-
-      .product-image{
-		    float: left;
+      .image{
+        float: left;
 		    margin-left: 46px;
         margin-top: -8px;
         text-align: right;
       }
 
-      .product-price{
+      .title{
         display: inline-block;
-        margin-bottom: 97px;
-        margin-left: 205px;
-        position: relative;
-        width: 25px;
-      }
-
-      .product-quantity{
-        display: inline-block;
-        margin-left: 90px;
-        width: 23px;
-      }
-
-      .total-price{
-        display: inline-block;
-        margin-left: 90px;
-        text-align: right;
-      }
-
-      input[type=number]{
-        width: 40px;
+        margin: 75px;
+        text-align: center;
       }
 
       p{
         display: inline-block;
         height: 12px;
         width: 92px;
-        text-align: left;
+        text-align: justify;
         margin-left: 30px;
         margin-top: 36px;
       }
-      
-      #cart li{
-        display: inline-block;
-        text-align: justify;
-        margin: 28px;
-        position: relative;
-        font-size: 20px; 
+
+      h2{
+        font-size: 16px;
       }
+
+      .quantity{
+        display: inline-block;
+        margin: 55px;
+      }
+
+      .total-price{
+        display: inline-block;
+        margin: 75px;
+      }
+
+      .button{
+        display: inline-block;
+        margin: 5px;
+      }
+
+      #physical-wrapper{
+        display: block;
+        border: dashed 1px gray;
+        width: 600px;
+      }
+
+      .game-format{
+        display: inline-block;
+        border-radius: 3px grey;
+      }
+
+      .success-alert{
+            width: 800px;
+            height: 70px;
+            position: relative;
+            margin: auto;
+            border: 2px solid green;
+            background-color: lightseagreen;
+            color: white;
+            text-align: center;
+            font-size: 18px; 
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 1s;
+            box-shadow: 5px 5px 5px #aaa;
+            top: 20px;
+        }
+
+        #loader-wrapper{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.5);
+            display: none;
+        }
+
+        #spinner{
+            display: block;
+            left: 50%;
+            top: 50%;
+            position: relative;
+        }
     </style>
   </head>
   <body>
-    <div id="site-content">
-       <div class="site-header">
-           <div class="container">
-                <a href="index.html" id="branding">
-                    <img id="logo" src="img/colorful-logo.png" alt="Company Logo" class="logo" width="40" height="40">
-                    <div class="logo-text">
-                        <h1 class="site title">Brøderbund Software</h1>
-                        <small class="site-description"><em>One game at a time</em></small>
-                    </div>
-                </a>
+    <header class="index-header">
+      <a href="index.html"><img id="title" src="img/name-logo.png" alt="Minelava Software Gaming name logo"></a>
+      <a class="cart-link" href="cart.html"><i class="fa fa-shopping-cart"> 1 item(s)</i></a>
+      <input class="button" type="button" value="Logout">
+      <a href="register.html"><input class="button" type="button" value="Register"></a>
 
-                <div class="right-section pull-right">
-                    <a href="cart.html" class="icon-cart">0 items in cart</a>
-                    <a href="register.html" target="blank"class="login-button">Login/Register</a>
-                </div>
+      <nav id="Menu">
+        <ul class="sidebar-menu">
+          <li class="sidebar-item"><a href="products.html">Accesories</a></li>
+          <li class="sidebar-item"><a href="products.html">Promotion</a></li>
+          <li class="sidebar-item"><a href="products.html">PC</a></li>
+          <li class="sidebar-item"><a href="products.html">Playstation</a></li>
+          <li class="sidebar-item"><a href="products.html">Xbox</a></li>
+          <li class="sidebar-item"><a href="products.html">Wii</a></li>
+        </ul>
 
-                <div class="main-navigation">
-                    <small class="menu-title">Menu</small>
-                    <a href="index.html"><img src="img/home.png" class="icon-home" width="30" height="30"></a>
-                    <ul class="menu">
-                        <li class="menu-item"><a href="products.html">Accessories</a></li>
-                        <li class="menu-item"><a href="products.html">Promotions</a></li>
-                        <li class="menu-item"><a href="products.html">PC</a></li>
-                        <li class="menu-item"><a href="products.html">Playstation</a></li>
-                        <li class="menu-item"><a href="products.html">Xbox</a></li>
-                        <li class="menu-item"><a href="products.html">Wii</a></li>
-                    </ul>
-                       
-                    <div class="search-form">
-                        <label><img src="img/icon-search.png"></label>
-                        <input type="text" placeholder="Search...">
-                    </div>
-                </div>
-           </div>
-       </div>
+        <form id="search-bar">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+        </form>
+      </nav>  
+    </header>
 
-       <main class="main-content">
-           <div class="container">
-               <div class="page">
-                    <div class="shopping-cart">
-                        <ul class="column-labels">
-                            <li class="product-image">Image</li>
-                            <li class="product-details">Product</li>
-                            <li class="product-price">Price</li>
-                            <li class="product-quantity">Quantity</li>
-                            <li class="product-line-price">Total</li>
-                        </ul>
+    <article>
+      <div class="shopping-cart">
+        <ul class="cart-bar">
+          <li class="cart-bar-items">Image</li>
+          <li class="cart-bar-items">Title</li>
+          <li class="cart-bar-items">Price</li>
+          <li class="cart-bar-items">Quantity</li>
+          <li class="cart-bar-items">Total</li>
+        </ul>
                           
-                        <div class="product">
-                          <div class="product-image">
-                            <img src="img/cart-thumb-1.jpg" alt="Product preview">
-                          </div>
-                          <div class="product-details">
-                            <div class="product-title">Need For Speed Rivals</div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                          </div>
-                          <div class="product-price">$21.90</div>
-                          <div class="product-quantity">
-                            <input type="number" value="1" min="1">
-                          </div>
-                          <div class="total-price">$21.90</div>
-                        </div>
-                          
-                        <div class="product">
-                          <div class="product-image">
-                            <img src="img/cart-thumb-3.jpg" alt="Product Preview">
-                          </div>
-                          <div class="product-details">
-                            <div class="product-title">Big Game Hunter</div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                            </div>
-                            <div class="product-price">$22.00</div>
-                            <div class="product-quantity">
-                              <input type="number" value="1" min="1">
-                            </div>
-                            <div class="total-price">$22.00</div>
-                        </div>
-                        
-                        <div class="cart">                        
-                          <div class="cart-total">
-                           <ul>
-                             <li><h3>Cart Total</h3></li>
-                             <li><strong>Subtotal:</strong>$43.90</li>
-                             <li><strong>Tax:</strong>$3.60</li>
-                             <li><strong>Grand total:</strong>$89.50</li>
-                             <li><strong>Shipment:</strong>$10.50</li>
-                             <li><strong>Total</strong>$100.00</li>
-                             <button><a href="index.html" class="button">Continue Shopping</a></button>
-                             <button><a href="index.html" class="button">Checkout</a></button>
-                            </ul>
-                          </div>
-                        </div>  
-                    </div>
-               </div>
-           </div> 
-       </div>
-    </div>
+        <div class="product">
+          <img class="image" src="img/cart-thumb-1.jpg" alt="Product preview">
+          <h2 class="title"><a>Need For Speed Rivals</h2>
+          <p class="price">$21.90</p>
+          <div class="quantity">
+            <input type="number" value="0" min="1" max="10" id="campo-cantidad">
+          </div>
+          <p class="total-price" id="precio-cantidad">$21.90</p>
+        </div>
+        
+        <section>
+          <div class="game-format">
+            <div>Select a format</div>
+            <label for="digital-videogame">Digital</label>
+            <input type="radio" name="format" id="digital-videogame" value="digital-videogame">
+            <label for="dvd-videogame">DVD bundle</label>
+            <input type="radio" name="format" id="dvd-videogame" value="dvd-videogame">
+          </div><br>
 
-    <div class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-            <div class="widget">
-              <h3 class="widget-title">Information</h3>
-              <ul class="no-bullet">
-                <li><a href="index.html">Site Map</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="index.html">FAQ</a></li>
-                <li><a href="index.html">Privacy Policy</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
+          <form method="POST">
+            <div id="physical-wrapper">
+              <h2><em title="required">User Info (* required)</em></h2>
+              <label for="name">Name</label>
+              <input type="text" maxlength="10" id="name" required>
+              <label for="name">Last name</label>
+              <input type="text" maxlength="10" id="last-name" required>
+              <br>
+              <label for="address">Address</label>
+              <input type="text" id="address" required>
+              <label for="email">Email</label>
+              <input type="email" id="email" required>
+              <br>
+              <label for="card">Card type:*</label>
+              <select id="card" name="usercard" required>
+                <option value="">-----</option>
+                <option value="visa">Visa</option>
+                <option value="mc">Mastercard</option>
+                <option value="amex">American Express</option>
+              </select>
+              <br>
+              <label for="number">Card Number:*</label>
+              <input type="text" id="number" name="cardnumber" required>
+              <label for="date">Expiration date:*</label>
+              <input type="text" id="date" name="expiration" required>
             </div>
+          </form>
+        </section>
+      </div><br>
+      
+        <h2>Shipping method</h2>
+          <div id="shipping-wrapper">
+            <input type="radio" id="standard" name="tipo-envio">
+            <label>Standard shipping</label>
           </div>
+
+          <div id="shipping-wrapper">
+            <input type="radio" id="special" name="tipo-envio">
+            <label>Special shipping</label>
+          </div>
+
+          <div id="shipping-wrapper">
+            <input type="radio" id="premium" name="tipo-envio">
+            <label>Premium shipping</label>
+          </div><br>
+
+      <div class="checkout">
+        <div>
+          <label for="cart-total" id="subtotal">Subtotal:</label>
+          <div type="number" value="21.9" id="subtotal-price">$21,9</div>
+
+          <label for="tax">Tax (22%):</label>
+          <div type="number" value="1.22" id="tax">$1.22</div>
           
-          <div class="col-md-2">
-            <div class="widget">
-              <h3 class="widget-title">Consumer Service</h3>
-              <ul class="no-bullet">
-                <li><a href="cart.html">Secure</a></li>
-                <li><a href="cart.html">Shipping &amp; Returns</a></li>
-                <li><a href="cart.html">Shipping</a></li>
-                <li><a href="cart.html">Orders &amp; Returns</a></li>
-                <li><a href="index.html">Group Sales</a></li>
-              </ul>
+          <label for="final-total">Final total:</label>
+          <div type="number" value="0" id="final-total"></div><br>
+
+          <section>
+            <div id="alert-buy" class="success-alert animated">
+                Thanks for your purchase!
             </div>
-          </div>
-          
-          <div class="col-md-2">
-            <div class="widget">
-              <h3 class="widget-title">My Account</h3>
-                <ul class="no-bullet">
-                  <li><a href="register.html">Login/Register</a></li>
-                  <li><a href="index.html">Settings</a></li>
-                  <li><a href="cart.html">Cart</a></li>
-                  <li><a href="cart.html">Order Tracking</a></li>
-                  <li><a href="index.html">Logout</a></li>
-                </ul>
+                
+            <div id="loader-wrapper">
+                <img id="spinner" src="img/ajax-loader.gif" width="50px">
             </div>
-          </div>
-          
-          <div class="col-md-6">
-            <div class="widget">
-              <form action="#" class="newsletter-form">
-                <small class="form-title">Join our Newsletter</small>
-                  <br>
-                <input type="text" placeholder="Enter your email...">
-                <input type="submit" value="Subscribe">
-              </form>
-            </div> 
-          </div>
-        </div>
-        <div class="colophon">
-          <div class="copy">Copyright 2018 Brøderbund Software. All rights reserved.</div>
-            <div class="social-links-square">
-              <a href="https://www.facebook.com" class="fa fa-facebook"></a>
-              <a href="https://www.twitter.com" class="fa fa-twitter"></a>
-              <a href="https://plus.google.com" class="fa fa-google"></a>
-              <a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
-            </div>
-        </div>
+          </section><br>
+
+          <button type="submit" id="buy"><a href="alert.html">confirm payment</a></button>
+          <button type="button" id="homepage"><a href="index.html">Back to homepage</a></button>
+        </div><br>
+      </div> 
+    </article>
+
+    <footer class="index-footer">
+      <div id=information>
+        <h4 class="info-title">Information</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
-    </div>
+        
+      <div id="my-account">   
+        <h4 class="account-title">My Account</h4>
+        <ul class="menu-account">
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+      </div>  
+          
+      <div id="social-media">
+        <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+        <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+        <a href="https://plus.google.com" class="fa fa-google"></a>
+        <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+        <a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
+      </div>
+
+      <p class="copyright">&#9400;2018 Minelava Software Gaming. All rights reserved.</p>
+    </footer>
   </body>
 </html>

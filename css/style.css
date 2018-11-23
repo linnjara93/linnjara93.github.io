@@ -1,190 +1,119 @@
-a#branding{
-	display: inline-block;
-	margin-top: -40px;
-	margin-left: 50px;
-	font-size: 15px;
-}
+  #menu{
+    float: left;
+    margin: auto;
+    padding: 10px;
+  }
 
-.site-description{
-	font-size: 18px;
-}
-
-#logo{
-	display: inline-block;
-    margin-top: -40px;
-	margin-bottom: -60px;
-	margin-left: -50px;
-}
-
-.menu-item{
-	display: inline-block;
-	margin: auto;
-	padding: 10px;
-	text-align: left;
-	position: relative;
-	align-content: center;
-}
-
-.search-form{
-	display: inline-block;
-	margin: auto;
-	text-align: left;
-	position: relative;
-	align-content: center;
-}
-
-.icon-home{
-    margin-bottom: -50px;
-    margin-left: -23px;
-}
-
-.right-section.pull-right{
-	display: inline-block;
-	margin: auto;
-	text-align: left;
-	position: relative;
-	align-content: center;
-}
-
-a.icon-cart, .login-button{
-	margin: 10px;
-
-}
-
-.home-slider{
-	position: relative;
-	margin-bottom: 30px;
-	display: inline-block;
-}
-
-.slide-image{
-	display: inline-block;
-	width: 200px;
-	border-radius: 5px;
-	max-width: 300px;
-	height: 220px;
-}
-
-section .product{
-	display: inline-block;
-	width: 200px;
-	height: 524px;
-	margin: 10px;
-	align-content: center;
-	text-align: left;
-	margin: 22px;
-	border-radius: 5px;
-}
-
-#box.figure-image{
-	display: inline-block;
-	width: 200px;
-	border-radius: 5px;
-	max-width: 300px;
-	height: 220px;
-}
-
-.slides li{
-	display: inline-block;
-    width: 220px;
-    height: 400px;
-    align-content: center;
-    text-align: justify;
-    margin: 45px;
+  .index-header, .index-footer{
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    height: 180px;
+    background-color: lightgray;
+    opacity: 0.8;
     position: relative;
-}
+    overflow: hidden;
+  }
 
-h2, .section-title{
-	font-size: 20px;
-}
+  #search-bar{
+    float: right;
+    margin-top: -61px;
+    margin-right: 10px;
+  }
 
-.site-footer{
-   display: inline-block;
-   width: 930px;
-   height: 100px;
-   color:black;
-   text-align: left;
-   margin: -13px 20px 10px 23px;
-}	
+  .search-button{
+    width: 45px; 
+    height: 40px;
+    border-radius: 50%;
+    border: gray;
+  }
 
-.widget{
-	margin-bottom: 30px
-}
+  .cart-link, input[type=button]{
+    float: right;
+    margin: 12px;
+  }
 
-.widget-title{
-	font-weight: 400;
-}
+  #product, #product-list{
+    align-content: center;
+    display: inline;
+    margin: auto;
+  }
 
-.copy{
-	float: left;
-	margin-top: 10px;
-}
+  #title{
+    display: inline-block;
+    width: 300px;
+    height: 110px;
+    margin: 0px;
+  }
 
-.newsletter-form{
-	padding: 10px 20px;
-	width: 100%;
-	border-width: 2px;
-	margin-right: 10px;
-	font-size: 20px;
-	float: right;
-}
-
-input[type="submit"]{
-	width: 80px;
-	border: 2px solid cornflowerblue;
-}
-
-.col-md-2{
-	display: inline-block;
-	width: auto;
-    height: 50px;
-	margin: 10px;
-}
-
-.fa{
-	padding: 10px;
-	font-size: 15px;
-	width: 15px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	border-radius: 50%;
-}
-
-.fa-shopping-cart{
-	font-size: 36px;
-	color: black
-}
-
-.fa-facebook{
-	background: #3B5998;
-	color: white;
-}
+  ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
   
-.fa-twitter{
-	background: #55ACEE;
-	color: white;
-}
-
-.fa-google{
-	background: #dd4b39;
-	color: white;
-}
-
-.fa-pinterest {
-	background: #cb2027;
-	color: white;
-}
-
-@media screen and (max-width: 1200px){
-	
-  .main-navigation{
-	display: inline-block;
+  .sidebar-item{
+    display: inline-block;
+    margin: 30px;
   }
 
-  .slider-collapse{
-	display: inline-block;
-	width: 900px;
-	height: 1000px;
+  h2{
+    background-color: none;
   }
-}
+
+  #information, #my-account, #social-media, .copyright{
+    display: inline-block;
+    height: 50px;
+    margin: 12px;
+  }
+
+  .fa {
+   padding: 10px;
+   font-size: 15px;
+   width: 15px;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 50%;
+  }
+
+  .fa-shopping-cart{
+    display: inline;
+    color: #3B5998;
+    padding: 1px;
+    font-size: 18px;
+  }
+
+  .fa-facebook {
+   background: #3B5998;
+   color: white;
+  }
+
+  .fa-twitter {
+   background: #55ACEE;
+   color: white;
+  }
+
+  .fa-google {
+   background: #dd4b39;
+   color: white;
+  }
+
+  .fa-instagram {
+   background: #d6249f;
+   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+   color: white;
+   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  }
+  
+  .fa-pinterest {
+   background: #cb2027;
+   color: white;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .copyright{
+    display: inline;
+  }

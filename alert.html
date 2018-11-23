@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<script src="js/alert.js"></script>
+	<style>
+		body{
+			background-image: url("img/346.jpg");
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.success-alert{
+			width: 800px;
+			height: 70px;
+			position: relative;
+			margin: auto;
+			border: 2px solid green;
+			background-color: lightseagreen;
+			color:white;
+			text-align: center;
+			font-size: 18px;
+			padding: 20px;
+			box-sizing: border-box;
+			border-radius: 10px;
+			opacity: 0;
+			box-shadow: 5px 5px 5px black;
+			top: 20px;
+		}
+		.visible{
+			opacity: 1;
+		}
+
+		#homepage{
+			border: dotted 2px lightsteelblue;
+			float: left;
+			align-content: center;
+		}
+
+		a{
+			text-decoration: none;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="alert-buy" class="success-alert">
+		Thank you for your purchase!
+	</div>
+	<br>
+	<button type="button" id="homepage"><a href="index.html">Back to homepage</a></button>
+</body>
+</html>
